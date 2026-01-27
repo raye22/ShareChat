@@ -4,7 +4,7 @@
 [![Dataset](https://img.shields.io/badge/Conversations-142%2C808-orange)](https://huggingface.co/datasets/tucnguyen/ShareChat)
 <!-- [![License](https://img.shields.io/badge/License-Research%20Use-green)](LICENSE) -->
 
-**SHARECHAT** is a large-scale corpus of authentic user-LLM conversations sourced directly from publicly shared URLs across five major chatbot platforms. Unlike existing datasets that homogenize interactions through uniform interfaces, SHARECHAT preserves native platform affordances and captures real-world usage patterns (hence, we called it ``in the wild''). More detials could be found in our paper here: [ShareChat: A Dataset of Chatbot Conversations in the Wild](https://arxiv.org/abs/2512.17843). The dataset is available on Hugging Face: [ShareChat](https://huggingface.co/datasets/tucnguyen/ShareChat).
+**SHARECHAT** is a large-scale corpus of authentic user-LLM conversations sourced directly from publicly shared URLs across five major chatbot platforms. Unlike existing datasets that homogenize interactions through uniform interfaces, SHARECHAT preserves native platform affordances and captures real-world usage patterns (hence, we called it "in the wild"). More detials could be found in our paper here: [ShareChat: A Dataset of Chatbot Conversations in the Wild](https://arxiv.org/abs/2512.17843). The dataset is available on Hugging Face: [ShareChat](https://huggingface.co/datasets/tucnguyen/ShareChat).
 
 ## Overview
 
