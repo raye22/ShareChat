@@ -1,6 +1,6 @@
 # SHARECHAT: A Dataset of Chatbot Conversations in the Wild
 
-[![Paper](https://img.shields.io/badge/Paper-ACL%202026-blue)](https://arxiv.org/abs/2512.17843)
+[![Paper](https://img.shields.io/badge/Paper-Arxiv%202026-blue)](https://arxiv.org/abs/2512.17843)
 [![Dataset](https://img.shields.io/badge/Conversations-142%2C808-orange)](https://huggingface.co/datasets/tucnguyen/ShareChat)
 <!-- [![License](https://img.shields.io/badge/License-Research%20Use-green)](LICENSE) -->
 
