@@ -1,0 +1,24 @@
+data:
+  input_file: "data/conversations.jsonl"
+  batch_size: 256  # Number of conversations to load from CSV at once
+
+model:
+  name: "Qwen/Qwen3-8B"
+  use_vllm: true
+  max_eval_batch_size: 128  # Max prompts per vLLM call in Step 2 (0 = no limit, process all at once)
+  max_tokens_step1: 256  # Max tokens to GENERATE in Step 1 (intention extraction output)
+  max_tokens_step2: 64  # Max tokens to GENERATE in Step 2 (verdict evaluation output)
+
+processing:
+  timeout: 300
+  llm_response_truncate_tokens: 1024  # Max tokens to keep from LLM responses in extractor
+  min_content_ratio: 0.8  # Skip evaluation if truncated content < 80% of original
+  include_reason: false  # Include reason explanation in verdict output (set to false to disable)
+
+checkpoint:
+  enabled: true
+  save_interval: 100
+  output_dir: "output/checkpoints"
+
+output:
+  results_dir: "output/results"

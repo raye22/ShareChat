@@ -1,0 +1,6 @@
+torch>=2.4.0
+transformers>=4.51.0
+pyyaml==6.0
+numpy==1.24.3
+pandas==2.0.0
+vllm==0.4.0

@@ -1,0 +1,43 @@
+# Environment
+.env
+*.env
+.env.local
+
+# Data
+data/input/*.csv
+data/input/*.json
+data/input/*.jsonl
+
+# Output files
+output/results/*.jsonl
+output/results/*.csv
+output/results/*.png
+output/checkpoints/
+output/logs/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+sample_conversations.py
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
