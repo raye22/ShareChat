@@ -82,7 +82,7 @@ We prioritize user privacy through a rigorous de-identification pipeline. First,
 - Other sensitive identifiers
 
 PII detection covers conversations in:
-- English, Spanish, German, French, Italian, Portuguese, Dutch, Chinese, Japanese, Russian, and Hebre.
+- English, Spanish, German, French, Italian, Portuguese, Dutch, Chinese, Japanese, Russian, and Hebrew.
 > **Note**: For the released dataset, we retain only conversations in the supported languages listed here and provide a separate URL list for conversations in other languages.
 
 And then we used GPT-OSS-120B to assess the accuracy of PII identification and by verifying that PII has been successfully removed from each message. The removal success rates by platform are:
