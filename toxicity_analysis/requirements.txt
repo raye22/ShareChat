@@ -1,0 +1,12 @@
+pandas>=2.0.0
+numpy>=1.24.0
+tqdm>=4.65.0
+matplotlib>=3.7.0
+python-dotenv>=1.0.0
+
+# Detoxify scorer
+detoxify>=0.5.2
+torch>=2.0.0
+
+# OpenAI moderation scorer
+openai>=1.30.0

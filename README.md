@@ -126,6 +126,21 @@ The final released DataFrames provide turn level conversation records from five 
 - When leveraging direct outputs of a specific model, users must adhere to its corresponding terms of use.
 - The views and opinions depicted in this dataset do not reflect the perspectives of the researchers or affiliated institutions engaged in the data collection process.
 
+## Analysis Code
+
+The two analyses reported in the paper ship as self-contained subprojects with
+their own READMEs, requirements, and CLI entry points:
+
+- [conversation_completeness/](conversation_completeness/) — LLM-judged whether each user intention in a conversation was fully, partially, or not addressed by the assistant. Outputs per-platform completeness scores and the figures in Section 4.1 of the paper.
+- [toxicity_analysis/](toxicity_analysis/) — Per-turn and per-conversation toxicity ratios using both Detoxify (multilingual, local) and OpenAI's `omni-moderation-latest`. Outputs the platform x role tables and bar charts in Section 3.3 of the paper.
+
+Each subproject can be installed and run independently:
+
+```bash
+cd conversation_completeness && pip install -r requirements.txt
+cd toxicity_analysis        && pip install -r requirements.txt
+```
+
 ## Citation
 If you use SHARECHAT in your research, please cite our paper:
 
