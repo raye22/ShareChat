@@ -31,5 +31,14 @@ Additional terms of use specific to SHARECHAT:
   - The dataset must not be used for building production systems whose primary
     purpose is to surveil, profile, or de-anonymize individuals.
 
+Disclaimer:
+  The SHARECHAT authors make no representations or warranties regarding the
+  underlying copyright status, accuracy, or completeness of the conversation
+  content. The dataset is provided strictly on an as-is basis for
+  non-commercial research and is offered without warranty of any kind, express
+  or implied. Downstream users assume sole responsibility for ensuring that
+  their use of the dataset complies with applicable law and with the terms of
+  service of each underlying chatbot platform.
+
 The accompanying analysis CODE in this repository is licensed separately under
 the Apache License, Version 2.0 — see LICENSE.
