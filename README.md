@@ -2,7 +2,8 @@
 
 [![Paper](https://img.shields.io/badge/Paper-Arxiv%202026-blue)](https://arxiv.org/abs/2512.17843)
 [![Dataset](https://img.shields.io/badge/Conversations-142%2C808-orange)](https://huggingface.co/datasets/tucnguyen/ShareChat)
-<!-- [![License](https://img.shields.io/badge/License-Research%20Use-green)](LICENSE) -->
+[![Code License](https://img.shields.io/badge/Code-Apache%202.0-green)](LICENSE)
+[![Data License](https://img.shields.io/badge/Data-CC%20BY--NC%204.0-yellow)](DATA_LICENSE)
 
 **SHARECHAT** is a large-scale corpus of authentic user-LLM conversations sourced directly from publicly shared URLs across five major chatbot platforms. Unlike existing datasets that homogenize interactions through uniform interfaces, SHARECHAT preserves native platform affordances and captures real-world usage patterns (hence, we called it "in the wild"). More detials could be found in our paper here: [ShareChat: A Dataset of Chatbot Conversations in the Wild](https://arxiv.org/abs/2512.17843). The dataset is available on Hugging Face: [ShareChat](https://huggingface.co/datasets/tucnguyen/ShareChat).
 
@@ -125,6 +126,15 @@ The final released DataFrames provide turn level conversation records from five 
 - You must not attempt to identify the identities of individuals or infer any sensitive personal data encompassed in this dataset.
 - When leveraging direct outputs of a specific model, users must adhere to its corresponding terms of use.
 - The views and opinions depicted in this dataset do not reflect the perspectives of the researchers or affiliated institutions engaged in the data collection process.
+
+## License
+
+This repository ships under two separate licenses:
+
+- **Dataset (CSVs and derived statistics)** — [Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](DATA_LICENSE). You may share and adapt the data for non-commercial research with attribution. Commercial use requires a separate agreement.
+- **Analysis code** (this repository's `.py` files, including `conversation_completeness/` and `toxicity_analysis/`) — [Apache License 2.0](LICENSE).
+
+In addition to the CC BY-NC terms, dataset users must comply with the privacy and re-identification clauses in [DATA_LICENSE](DATA_LICENSE) and respect the underlying chatbot platforms' own terms of use when working with their outputs.
 
 ## Analysis Code
 
