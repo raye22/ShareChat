@@ -1,10 +1,10 @@
 # SHARECHAT: A Dataset of Chatbot Conversations in the Wild
 
-[![Paper](https://img.shields.io/badge/Paper-Arxiv%202026-blue)](https://arxiv.org/abs/2512.17843)
-[![Dataset](https://img.shields.io/badge/Conversations-142%2C808-orange)](https://huggingface.co/datasets/tucnguyen/ShareChat)
+[![Paper](https://img.shields.io/badge/Paper-Under%20Review-blue)]()
+[![Conversations](https://img.shields.io/badge/Conversations-142%2C808-orange)]()
 <!-- [![License](https://img.shields.io/badge/License-Research%20Use-green)](LICENSE) -->
 
-**SHARECHAT** is a large-scale corpus of authentic user-LLM conversations sourced directly from publicly shared URLs across five major chatbot platforms. Unlike existing datasets that homogenize interactions through uniform interfaces, SHARECHAT preserves native platform affordances and captures real-world usage patterns (hence, we called it "in the wild"). More detials could be found in our paper here: [ShareChat: A Dataset of Chatbot Conversations in the Wild](https://arxiv.org/abs/2512.17843). The dataset is available on Hugging Face: [ShareChat](https://huggingface.co/datasets/tucnguyen/ShareChat).
+**SHARECHAT** is a large-scale corpus of authentic user-LLM conversations sourced directly from publicly shared URLs across five major chatbot platforms. Unlike existing datasets that homogenize interactions through uniform interfaces, SHARECHAT preserves native platform affordances and captures real-world usage patterns (hence, we called it "in the wild"). The paper and Hugging Face dataset links are withheld to comply with NeurIPS double-blind review and will be added in the camera-ready version.
 
 ## Overview
 
@@ -67,7 +67,7 @@ And different platforms capture distinct metadata and structural elements:
 | Model Version | ✓ | – | ✓ | ✓ | – |
 | View/Share Counts | – | ✓ | – | – | – |
 
-**IRB Approval**: Data collection conducted under IRB approval (#28569).
+**IRB Approval**: Data collection was conducted under IRB approval at the authors' institution. The protocol number is withheld for double-blind review.
 
 ## Privacy and PII Removal
 
@@ -142,19 +142,17 @@ cd toxicity_analysis        && pip install -r requirements.txt
 ```
 
 ## Citation
-If you use SHARECHAT in your research, please cite our paper:
 
 ```bibtex
-@misc{yan2026sharechatdatasetchatbotconversations,
-      title={ShareChat: A Dataset of Chatbot Conversations in the Wild}, 
-      author={Yueru Yan and Tuc Nguyen and Bo Su and Melissa Lieffers and Thai Le},
+@misc{anonymous2026sharechat,
+      title={ShareChat: A Dataset of Chatbot Conversations in the Wild},
+      author={Anonymous Authors},
       year={2026},
-      eprint={2512.17843},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2512.17843}, 
+      note={Under review at NeurIPS 2026 Datasets and Benchmarks track},
 }
 ```
+
+> Author list, paper link, and dataset link are withheld for double-blind review and will be added in the camera-ready version.
 ---
 
 ## Appendix: Detailed Platform Documentation

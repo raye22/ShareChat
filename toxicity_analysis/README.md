@@ -162,16 +162,13 @@ toxicity_analysis/
 
 ## Citation
 
-If you use this code, please cite:
-
 ```bibtex
-@misc{yan2026sharechatdatasetchatbotconversations,
+@misc{anonymous2026sharechat,
       title={ShareChat: A Dataset of Chatbot Conversations in the Wild},
-      author={Yueru Yan and Tuc Nguyen and Bo Su and Melissa Lieffers and Thai Le},
+      author={Anonymous Authors},
       year={2026},
-      eprint={2512.17843},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2512.17843},
+      note={Under review at NeurIPS 2026 Datasets and Benchmarks track},
 }
 ```
+
+> Author list and paper link are withheld for double-blind review.
