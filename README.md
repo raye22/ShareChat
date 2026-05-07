@@ -83,7 +83,9 @@ We prioritize user privacy through a rigorous de-identification pipeline. First,
 
 PII detection covers conversations in:
 - English, Spanish, German, French, Italian, Portuguese, Dutch, Chinese, Japanese, Russian, and Hebrew.
-> **Note**: Pattern-based detection (`<URL>`, `<EMAIL_ADDRESS>`, `<PHONE_NUMBER>`, `<CREDIT_CARD>`, etc.) is language-agnostic and was applied to all messages. Entity-based detection (`<PERSON>`, `<LOCATION>`) using Presidio's NER models is reliable only for the 11 languages listed above; messages in other languages received the pattern-based pass only. Conversations are released regardless of language.
+> **Note**: Pattern-based detection (`<URL>`, `<EMAIL_ADDRESS>`, `<PHONE_NUMBER>`, `<CREDIT_CARD>`, etc.) is language-agnostic and was applied to all messages. Entity-based detection (`<PERSON>`, `<LOCATION>`) using Presidio's NER models is reliable only for the 11 languages listed above; messages in other languages received the pattern-based pass only.
+
+To ensure that contextual-PII review covers the bulk of every released conversation, we apply a **conversation-level majority-language filter**: a conversation enters the redacted release only if more than 50% of its messages are in one of the 11 supported languages above. Conversations whose majority language falls outside this set — 8,842 conversations in total across the five platforms — are excluded from the redacted release, but their original source URLs are published alongside the dataset in [`filtered_out_conversations_non_target_languages.json`](filtered_out_conversations_non_target_languages.json) (grouped by platform, tagged with each conversation's dominant language) so researchers wishing to apply language-specific PII tooling can recover them. Within retained conversations, minority-language messages are preserved. All redaction spans returned by Presidio are post-processed into a single `<REDACTED>` placeholder for a uniform release schema.
 
 And then we used GPT-OSS-120B to assess the accuracy of PII identification and by verifying that PII has been successfully removed from each message. The removal success rates by platform are:
 
