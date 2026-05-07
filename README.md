@@ -17,7 +17,7 @@ SHARECHAT addresses these limitations by:
 - **Multi-Platform Coverage**: Spans five major platforms with distinct design philosophies
 - **Authentic Usage**: Sourced from voluntarily shared conversations, reducing observer bias
 - **Extended Interactions**: Substantially longer conversations than prior datasets (avg. 4.62 turns vs. 2.02 in LMSYS-Chat-1M)
-- **Linguistic Diversity**: Covers 101 distinct languages
+- **Linguistic Diversity**: Covers 95 distinct languages
 
 ## Dataset Statistics
 
@@ -26,7 +26,7 @@ SHARECHAT addresses these limitations by:
 | **Total Conversations** | 142,808 |
 | **Total Turns** | 660,293 |
 | **Average Turns per Conversation** | 4.62 |
-| **Languages Covered** | 101 |
+| **Languages Covered** | 95 |
 | **Collection Period** | April 2023 – October 2025 |
 | **Avg. User Tokens** | 135.04 ± 1,820.88 |
 | **Avg. Chatbot Tokens** | 1,115.30 ± 1,764.81 |
@@ -35,11 +35,11 @@ SHARECHAT addresses these limitations by:
 
 | Platform | Conversations | Turns | Avg. Turns | Languages |
 |----------|---------------|-------|------------|-----------|
-| **ChatGPT** | 102,740 | 542,148 | 5.28 | 101 |
-| **Perplexity** | 17,305 | 24,378 | 1.41 | 45 |
-| **Grok** | 14,415 | 53,094 | 3.69 | 60 |
-| **Gemini** | 7,402 | 36,422 | 4.92 | 47 |
-| **Claude** | 946 | 4,251 | 4.49 | 19 |
+| **ChatGPT** | 102,740 | 542,148 | 5.28 | 84 |
+| **Perplexity** | 17,305 | 24,378 | 1.41 | 47 |
+| **Grok** | 14,415 | 53,094 | 3.69 | 54 |
+| **Gemini** | 7,402 | 36,422 | 4.92 | 41 |
+| **Claude** | 946 | 4,251 | 4.49 | 18 |
 
 *Token statistics computed using the Llama-2 tokenizer for consistent cross-platform comparison.*
 
